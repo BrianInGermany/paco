@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PACO Y PACO | Coming Soon</title>
     <style>
-        /* Grunddesign & Farben basierend auf dem Poster */
         body {
             margin: 0;
             padding: 0;
-            background-color: #f2e9d9; /* Vintage Beige vom Poster */
+            background-color: #f2e9d9;
             color: #1a1a1a;
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             display: flex;
@@ -17,15 +16,15 @@
             align-items: center;
             height: 100vh;
             text-align: center;
-            overflow: hidden;
+            overflow-x: hidden;
         }
 
         .container {
             max-width: 800px;
             padding: 20px;
+            margin-bottom: 100px; /* Platz für den Footer */
         }
 
-        /* Überschrift im kräftigen Rot */
         h1 {
             font-size: clamp(3rem, 10vw, 5rem);
             margin: 0;
@@ -35,7 +34,6 @@
             text-transform: uppercase;
         }
 
-        /* Die Trennlinie */
         .line {
             width: 100px;
             height: 4px;
@@ -43,7 +41,6 @@
             margin: 20px auto;
         }
 
-        /* Die drei Stichworte in Grün */
         .keywords {
             font-size: clamp(1.2rem, 4vw, 2.2rem);
             color: #1e4d2b;
@@ -53,7 +50,6 @@
             margin-bottom: 40px;
         }
 
-        /* "Something big is coming soon" */
         .coming-soon {
             font-size: clamp(1rem, 3vw, 1.5rem);
             color: #333;
@@ -63,27 +59,28 @@
             animation: pulse 2s infinite ease-in-out;
         }
 
-        /* E-Mail Link im Fußbereich */
         .footer {
             position: absolute;
-            bottom: 40px;
+            bottom: 30px;
             width: 100%;
+            font-size: 0.9rem;
+            line-height: 1.4;
         }
 
         .footer a {
             color: #1e4d2b;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.2rem;
-            border-bottom: 2px solid transparent;
-            transition: border 0.3s;
         }
 
-        .footer a:hover {
-            border-bottom: 2px solid #1e4d2b;
+        .imprint {
+            margin-top: 15px;
+            color: #666;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        /* Animation für den Coming Soon Text */
         @keyframes pulse {
             0% { opacity: 0.5; }
             50% { opacity: 1; }
@@ -102,6 +99,12 @@
 
     <div class="footer">
         <a href="mailto:hello@pacopacopaco.wtf">hello@pacopacopaco.wtf</a>
+        <div class="imprint">
+            <strong>Impressum:</strong><br>
+            Brian Junker-Latocha<br>
+            Herm.-Steinhäuser-Str. 18<br>
+            63065 Offenbach am Main
+        </div>
     </div>
 
 </body>
